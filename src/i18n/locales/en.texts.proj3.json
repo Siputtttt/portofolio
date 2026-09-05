@@ -1,0 +1,22 @@
+{
+  "Aplikasi Mobile Presensi Geolocation": "Geolocation Attendance Mobile App",
+  "Ekosistem Presensi Pemerintahan": "Government Attendance Ecosystem",
+  "Presensi mobile lintas platform dengan validasi lokasi GPS, foto selfie, dan toleransi jaringan tidak stabil melalui buffer antrean lokal.": "Cross-platform mobile attendance with GPS location validation, selfie photo verification, and resilience to unstable networks through a local queue buffer.",
+  "Dibangun dengan Ionic + Capacitor di atas Vue dan berkomunikasi dengan REST API ekosistem presensi pemerintahan — dirancang agar tetap dapat digunakan di area dengan sinyal buruk dan pada perangkat kelas menengah.": "Built with Ionic + Capacitor on top of Vue and talking to the government attendance ecosystem's REST API — designed to stay usable in poor-signal areas and on mid-range devices.",
+  "Android · iOS (Hybrid)": "Android · iOS (Hybrid)",
+  "Fullstack Developer — Mobile": "Fullstack Developer — Mobile",
+  "Validasi lokasi GPS & radius terhadap titik presensi": "GPS location & radius validation against attendance points",
+  "Verifikasi foto selfie saat melakukan presensi": "Selfie photo verification when checking in",
+  "Buffer antrean lokal saat koneksi hilang": "Local queue buffer when the connection drops",
+  "Sinkronisasi otomatis saat koneksi pulih": "Automatic sync once the connection returns",
+  "Request idempotent — mencegah presensi ganda saat retry": "Idempotent requests — preventing duplicate attendance on retry",
+  "01 // MASALAH": "01 // PROBLEM",
+  "Jaringan Seluler Tidak Stabil": "Unstable Mobile Networks",
+  "Presensi sering gagal atau terkirim ganda ketika pengguna berada di area dengan sinyal buruk — pengalaman yang fatal untuk absensi harian.": "Attendance often fails or gets sent twice when users are in poor-signal areas — a fatal experience for daily attendance.",
+  "02 // PENDEKATAN": "02 // APPROACH",
+  "Buffer Antrean Lokal": "Local Queue Buffer",
+  "Data presensi disimpan sementara di perangkat dan disinkronkan ke server saat koneksi pulih, sehingga presensi tetap tercatat walau jaringan terputus.": "Attendance data is stored temporarily on the device and synced to the server once the connection returns, so attendance is still recorded even if the network drops.",
+  "03 // HASIL": "03 // RESULTS",
+  "Tercatat Tepat Satu Kali": "Recorded Exactly Once",
+  "Mekanisme retry idempotent menjamin satu presensi hanya tercatat satu kali — tanpa duplikasi data di sisi server.": "An idempotent retry mechanism guarantees each attendance is recorded exactly once — with no data duplication on the server side."
+}

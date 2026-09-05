@@ -1,0 +1,21 @@
+{
+  "CMS Perusahaan Multi-Tenant": "Multi-Tenant Enterprise CMS",
+  "Perusahaan / Klien Jamak (Multi-Tenant)": "Corporations / Multiple Clients (Multi-Tenant)",
+  "Platform konten perusahaan dengan isolasi data per tenant, RBAC modular, dan alur publikasi terstruktur di atas arsitektur Laravel + Vue.": "Enterprise content platform with per-tenant data isolation, modular RBAC, and a structured publishing flow built on a Laravel + Vue architecture.",
+  "Satu basis kode melayani banyak klien perusahaan — setiap tenant memiliki ruang datanya sendiri, manajemen pengguna dengan kontrol akses berbasis peran, serta alur kerja editorial yang terstruktur dari draf hingga publikasi.": "One codebase serves many enterprise clients — each tenant has its own data space, user management with role-based access control, and a structured editorial workflow from draft to publication.",
+  "Web · Multi-Tenant SaaS": "Web · Multi-Tenant SaaS",
+  "Isolasi data per tenant dalam satu basis kode": "Per-tenant data isolation in one codebase",
+  "Manajemen pengguna & RBAC modular (role/permission)": "User management & modular RBAC (role/permission)",
+  "Alur publikasi terstruktur: draf → review → publish": "Structured publishing flow: draft → review → publish",
+  "Modul konten & media per tenant": "Content & media modules per tenant",
+  "Audit trail aktivitas & riwayat revisi konten": "Activity audit trail & content revision history",
+  "01 // LINGKUP": "01 // SCOPE",
+  "Multi-Tenant, Data Terisolasi": "Multi-Tenant, Isolated Data",
+  "Banyak klien berbagi satu instalasi aplikasi tanpa saling menembus data. Setiap tenant membutuhkan ruang konten, pengguna, dan konfigurasinya sendiri.": "Many clients share a single application installation without breaching each other's data. Every tenant needs its own content space, users, and configuration.",
+  "02 // PENDEKATAN": "02 // APPROACH",
+  "Satu Codebase, Scoping Ketat": "One Codebase, Strict Scoping",
+  "Backend Laravel menegakkan isolasi lewat scoping query per tenant dan RBAC modular — frontend Vue 3 mengonsumsi REST API yang sama untuk semua klien.": "The Laravel backend enforces isolation through per-tenant query scoping and modular RBAC — a Vue 3 frontend consumes the same REST API for all clients.",
+  "03 // HASIL": "03 // RESULTS",
+  "Alur Publikasi yang Terjaga": "A Guarded Publishing Flow",
+  "Setiap perubahan konten melewati alur review sebelum live, tercatat sebagai riwayat revisi, dan dapat diaudit kapan saja.": "Every content change goes through a review flow before going live, is recorded as revision history, and can be audited at any time."
+}

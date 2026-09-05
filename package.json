@@ -1,0 +1,32 @@
+{
+  "name": "portofolio-vue",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portofolio Muhammad Putra Rasidin — Vue 3 (Fullstack Developer & Systems Architect)",
+  "engines": {
+    "node": ">=20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "gen": "node scripts/generate-vue.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siputtttt/portofolio.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.5.42",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.8",
+    "autoprefixer": "^10.5.5",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^3.4.19",
+    "vite": "^8.2.2"
+  }
+}

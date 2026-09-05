@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "role": "Fullstack Developer & Systems Architect",
+    "homeTitle": "Muhammad Putra Rasidin — Fullstack Developer & Systems Architect",
+    "homeDescription": "Portofolio Muhammad Putra Rasidin, Fullstack Developer & Systems Architect di Bandung — sistem pemerintahan skala ribuan ASN, aplikasi mobile presensi, CMS multi-tenant, LMS & CBT, serta infrastruktur Linux production.",
+    "notFoundTitle": "Proyek Tidak Ditemukan — Muhammad Putra Rasidin",
+    "notFoundDescription": "Karya yang dicari tidak ditemukan dalam katalog portofolio Muhammad Putra Rasidin."
+  },
+  "nav": {
+    "available": "Tersedia untuk proyek",
+    "karya": "Karya",
+    "tentang": "Tentang",
+    "keahlian": "Keahlian",
+    "pengalaman": "Pengalaman",
+    "kontak": "Kontak",
+    "aria": {
+      "menu": "Buka menu navigasi",
+      "menuClose": "Tutup menu navigasi",
+      "profile": "Profil Putra Rasidin",
+      "lang": "Ganti bahasa situs",
+      "brand": "Muhammad Putra Rasidin — kembali ke beranda"
+    }
+  },
+  "footer": {
+    "uptime": "SYS.UPTIME: 99.98%",
+    "rights": "© 2026 MUHAMMAD PUTRA RASIDIN — ALL RIGHTS RESERVED",
+    "buildPre": "BANDUNG, ID // BUILD:",
+    "buildTag": "PRODUCTION-2026.09",
+    "aria": {
+      "brand": "Muhammad Putra Rasidin — kembali ke beranda"
+    }
+  },
+  "ui": {
+    "swipeHint": "GESER → LIHAT ARSITEKTUR LENGKAP"
+  }
+}

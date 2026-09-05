@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "role": "Fullstack Developer & Systems Architect",
+    "homeTitle": "Muhammad Putra Rasidin — Fullstack Developer & Systems Architect",
+    "homeDescription": "Portfolio of Muhammad Putra Rasidin, Fullstack Developer & Systems Architect in Bandung — government systems serving thousands of civil servants, mobile attendance app, multi-tenant CMS, LMS & CBT, and production Linux infrastructure.",
+    "notFoundTitle": "Project Not Found — Muhammad Putra Rasidin",
+    "notFoundDescription": "The work you are looking for was not found in Muhammad Putra Rasidin's portfolio catalog."
+  },
+  "nav": {
+    "available": "Available for projects",
+    "karya": "Works",
+    "tentang": "About",
+    "keahlian": "Skills",
+    "pengalaman": "Experience",
+    "kontak": "Contact",
+    "aria": {
+      "menu": "Open navigation menu",
+      "menuClose": "Close navigation menu",
+      "profile": "Putra Rasidin profile",
+      "lang": "Change site language",
+      "brand": "Muhammad Putra Rasidin — back to home"
+    }
+  },
+  "footer": {
+    "uptime": "SYS.UPTIME: 99.98%",
+    "rights": "© 2026 MUHAMMAD PUTRA RASIDIN — ALL RIGHTS RESERVED",
+    "buildPre": "BANDUNG, ID // BUILD:",
+    "buildTag": "PRODUCTION-2026.09",
+    "aria": {
+      "brand": "Muhammad Putra Rasidin — back to home"
+    }
+  },
+  "ui": {
+    "swipeHint": "SWIPE → TO VIEW FULL ARCHITECTURE"
+  }
+}

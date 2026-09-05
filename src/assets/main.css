@@ -1,0 +1,558 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+            --paper: #f9f9f8;
+            /* page surface  : warm off-white  */
+            --card: #ffffff;
+            /* containers    : clean white     */
+            --low: #f3f4f3;
+            /* surface low   : muted           */
+            --dim: #dadad9;
+            /* surface dim                      */
+            --ink: #1c1917;
+            /* primary text  : deep jet charcoal*/
+            --ink2: #57534e;
+            /* secondary text: stone gray       */
+            --ink3: #78716c;
+            /* metadata text : stone muted      */
+            --accent: #d35400;
+            /* industrial amber highlight       */
+            --accent2: #ea580c;
+            /* rust orange hover                */
+            --line: #e7e5e4;
+            /* hairline rules                   */
+            --green: #16a34a;
+            /* emerald availability             */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        ::selection {
+            background: var(--accent);
+            color: #fff
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px
+        }
+
+        @media(max-width:768px) {
+            .container {
+                padding: 0 18px
+            }
+        }
+
+        .section {
+            padding: 104px 0
+        }
+
+        @media(max-width:768px) {
+            .section {
+                padding: 68px 0
+            }
+        }
+
+        /* editorial headings */
+        .h-disp {
+            font-weight: 800;
+            font-size: clamp(42px, 6.4vw, 62px);
+            line-height: 1.06;
+            letter-spacing: -0.035em;
+            color: var(--ink)
+        }
+
+        .h-sec {
+            font-weight: 700;
+            font-size: clamp(30px, 3.6vw, 38px);
+            line-height: 1.12;
+            letter-spacing: -0.02em;
+            color: var(--ink)
+        }
+
+        .h-small {
+            font-weight: 700;
+            font-size: 19px;
+            letter-spacing: -0.01em;
+            color: var(--ink)
+        }
+
+        .meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            color: var(--ink3)
+        }
+
+        .eyebrow {
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            color: var(--accent);
+            border: 1px solid var(--line);
+            background: var(--card);
+            padding: 6px 12px
+        }
+
+        .chip {
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            color: var(--ink2);
+            border: 1px solid var(--dim);
+            background: var(--card);
+            padding: 4px 9px;
+            white-space: nowrap
+        }
+
+        .chip.on {
+            color: var(--ink);
+            border-color: var(--ink)
+        }
+
+        .body-text {
+            color: var(--ink2);
+            font-size: 16px;
+            line-height: 1.75
+        }
+
+        .body-text a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent
+        }
+
+        .body-text a:hover {
+            border-bottom-color: var(--accent)
+        }
+
+        /* buttons */
+        .btn-dark,
+        .btn-line {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            padding: 14px 26px;
+            transition: all .2s ease
+        }
+
+        .btn-dark {
+            background: var(--ink);
+            color: #fff;
+            border: 1px solid var(--ink)
+        }
+
+        .btn-dark:hover {
+            background: var(--accent);
+            border-color: var(--accent)
+        }
+
+        .btn-line {
+            border: 1px solid var(--ink);
+            color: var(--ink);
+            background: transparent
+        }
+
+        .btn-line:hover {
+            border-color: var(--accent);
+            color: var(--accent)
+        }
+
+        .txtlink {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            color: var(--ink);
+            text-decoration: none;
+            border-bottom: 1px solid var(--ink);
+            padding-bottom: 2px;
+            transition: all .2s ease
+        }
+
+        .txtlink:hover {
+            color: var(--accent);
+            border-color: var(--accent)
+        }
+
+        .txtlink.acc {
+            color: var(--accent);
+            border-color: var(--accent)
+        }
+
+        .txtlink.acc:hover {
+            color: var(--ink);
+            border-color: var(--ink)
+        }
+
+        /* hairline panel system */
+        .panel {
+            background: var(--card);
+            border: 1px solid var(--line)
+        }
+
+        .panel.low {
+            background: var(--low)
+        }
+
+        .hair-t {
+            border-top: 1px solid var(--line)
+        }
+
+        /* reveal on scroll */
+        .rv {
+            opacity: 0;
+            transform: translateY(26px);
+            transition: opacity .7s cubic-bezier(.2, .6, .2, 1), transform .7s cubic-bezier(.2, .6, .2, 1)
+        }
+
+        .rv.in {
+            opacity: 1;
+            transform: none
+        }
+
+        /* live status dot */
+        @keyframes pingdot {
+            0% {
+                box-shadow: 0 0 0 0 rgba(22, 163, 74, .45)
+            }
+
+            70% {
+                box-shadow: 0 0 0 7px rgba(22, 163, 74, 0)
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(22, 163, 74, 0)
+            }
+        }
+
+        .pulse-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--green);
+            animation: pingdot 1.8s cubic-bezier(0, 0, .2, 1) infinite;
+            display: inline-block
+        }
+
+        @keyframes amberblink {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .35
+            }
+        }
+
+        .amber-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--accent);
+            animation: amberblink 1.4s ease-in-out infinite;
+            display: inline-block
+        }
+
+        /* scroll margins for sticky nav */
+        section[id] {
+            scroll-margin-top: 96px
+        }
+
+        /* navbar — tanda section yang sedang aktif (scroll-spy) */
+        .nav-link {
+            position: relative
+        }
+
+        .nav-link.is-active {
+            color: var(--accent)
+        }
+
+        .nav-link.is-active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -14px;
+            width: 20px;
+            height: 2px;
+            background: var(--accent)
+        }
+
+        /* lightbox modal preview foto */
+        .lb-enter-active,
+        .lb-leave-active {
+            transition: opacity .22s ease
+        }
+
+        .lb-enter-from,
+        .lb-leave-to {
+            opacity: 0
+        }
+
+        .lb-enter-active .lb-card,
+        .lb-leave-active .lb-card {
+            transition: transform .26s cubic-bezier(.2, .6, .2, 1)
+        }
+
+        .lb-enter-from .lb-card,
+        .lb-leave-to .lb-card {
+            transform: translateY(14px) scale(.965)
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--paper)
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--dim);
+            border: 2px solid var(--paper)
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--ink3)
+        }
+
+/* ============================================================
+   MOBILE & TOUCH UX — penyesuaian responsif + interaktif
+   ============================================================ */
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%
+}
+
+/* Cegah horizontal-scroll "liar" di layar kecil.
+   Area yang memang sengaja digeser (diagram arsitektur) tetap
+   aman karena scroll-nya terkunci di dalam overflow-x-nya sendiri. */
+html,
+body {
+    overflow-x: hidden;
+    overflow-x: clip
+}
+
+body {
+    -webkit-tap-highlight-color: transparent
+}
+
+@media(max-width:420px) {
+    /* Heading hero sedikit dikecilkan agar proporsional di HP sempit */
+    .h-disp {
+        font-size: 34px
+    }
+
+    /* Tombol utama melebar penuh supaya gampang diketuk (touch-friendly) */
+    .btn-dark,
+    .btn-line {
+        width: 100%;
+        justify-content: center
+    }
+
+    .container {
+        padding: 0 16px
+    }
+}
+
+@media(hover:none) and (pointer:coarse) {
+    .btn-dark:active,
+    .btn-line:active {
+        transform: scale(.985)
+    }
+
+    .btn-dark,
+    .btn-line,
+    .txtlink,
+    .chip {
+        transition: all .16s ease
+    }
+}
+
+/* Separator kiri yang hanya tampil saat layout >= lg (grid 2 kolom).
+   Saat bertumpuk di mobile garis ini disembunyikan supaya rapi. */
+.sep-lg-left {
+    border-left-color: var(--line)
+}
+
+@media(min-width:1024px) {
+    .sep-lg-left {
+        border-left: 1px solid var(--line)
+    }
+}
+
+/* Diagram arsitektur: bisa digeser dengan nyaman di layar sentuh */
+.touch-scroll {
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none
+}
+
+.touch-scroll::-webkit-scrollbar {
+    display: none;
+    height: 0
+}
+
+.touch-scroll>* {
+    scroll-snap-align: start
+}
+
+/* ------------------------------------------------------------------
+   Drawer navigasi mobile (interaktif)
+   ------------------------------------------------------------------ */
+#mobileNav {
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 24px 48px -24px rgba(28, 25, 23, .3)
+}
+
+.mnav-enter-active,
+.mnav-leave-active {
+    transition: opacity .22s ease, transform .22s cubic-bezier(.2, .6, .2, 1)
+}
+
+.mnav-enter-from,
+.mnav-leave-to {
+    opacity: 0;
+    transform: translateY(-6px)
+}
+
+.mnav-dim-enter-active,
+.mnav-dim-leave-active {
+    transition: opacity .24s ease
+}
+
+.mnav-dim-enter-from,
+.mnav-dim-leave-to {
+    opacity: 0
+}
+
+/* Item menu muncul berurutan (stagger) tiap drawer dibuka */
+.mnav-enter-active .mnav-i {
+    animation: mnavItem .36s cubic-bezier(.2, .6, .2, 1) backwards
+}
+
+.mnav-enter-active .mnav-i:nth-child(2) {
+    animation-delay: .04s
+}
+
+.mnav-enter-active .mnav-i:nth-child(3) {
+    animation-delay: .08s
+}
+
+.mnav-enter-active .mnav-i:nth-child(4) {
+    animation-delay: .12s
+}
+
+.mnav-enter-active .mnav-i:nth-child(5) {
+    animation-delay: .16s
+}
+
+.mnav-enter-active .mnav-i:nth-child(6) {
+    animation-delay: .2s
+}
+
+.mnav-enter-active .mnav-i:nth-child(7) {
+    animation-delay: .24s
+}
+
+@keyframes mnavItem {
+    from {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+/* Tombol hamburger 3 garis -> X (morph saat drawer terbuka) */
+.hamb {
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 14px
+}
+
+.hamb .bar {
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background: currentColor;
+    transition: transform .28s cubic-bezier(.2, .6, .2, 1), opacity .2s ease
+}
+
+.hamb .bar:nth-child(1) {
+    top: 0
+}
+
+.hamb .bar:nth-child(2) {
+    top: 6px
+}
+
+.hamb .bar:nth-child(3) {
+    top: 12px
+}
+
+.hamb-btn.open .hamb .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg)
+}
+
+.hamb-btn.open .hamb .bar:nth-child(2) {
+    opacity: 0
+}
+
+.hamb-btn.open .hamb .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg)
+}
+
+/* Feedback ringkas untuk link & kartu di layar sentuh */
+@media(hover:none) and (pointer:coarse) {
+    .panel,
+    a,
+    button {
+        -webkit-touch-callout: none
+    }
+}
+

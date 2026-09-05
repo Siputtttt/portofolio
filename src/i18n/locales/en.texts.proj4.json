@@ -1,0 +1,21 @@
+{
+  "LMS Institusi & Computer Based Test": "Institution LMS & Computer Based Test",
+  "Institusi Pemerintahan — Pelatihan ASN": "Government Institution — ASN Training",
+  "Web Application": "Web Application",
+  "Learning Management System untuk institusi pemerintahan: pengelolaan pelatihan ASN, modul pembelajaran terstruktur, dan ujian berbasis komputer.": "Learning Management System for government institutions: civil servant training management, structured learning modules, and computer-based exams.",
+  "Berfungsi sebagai pusat pelatihan dan sertifikasi — dari pendaftaran, materi pembelajaran, penjadwalan ujian berbasis komputer (CBT), hingga rekapitulasi hasil dan penerbitan sertifikat.": "It serves as the training and certification hub — from registration, learning materials, computer-based test (CBT) scheduling, to result recaps and certificate issuance.",
+  "Pengelolaan pelatihan ASN & penjadwalan kelas": "Civil servant training management & class scheduling",
+  "Modul pembelajaran terstruktur (materi & kuis)": "Structured learning modules (materials & quizzes)",
+  "Ujian berbasis komputer (CBT) dengan penilaian otomatis": "Computer-based testing (CBT) with automated grading",
+  "Bank soal & penjadwalan sesi ujian": "Question bank & exam session scheduling",
+  "Rekapitulasi nilai, laporan instansi, dan sertifikat": "Score recaps, agency reports, and certificates",
+  "01 // LINGKUP": "01 // SCOPE",
+  "Pelatihan ASN Terpusat": "Centralized ASN Training",
+  "Institusi membutuhkan satu tempat untuk mengelola pelatihan pegawai dari pendaftaran hingga evaluasi akhir — tanpa tumpang-tindih data di banyak berkas.": "The institution needed one place to manage employee training from registration to final evaluation — without overlapping data scattered across many files.",
+  "02 // PENDEKATAN": "02 // APPROACH",
+  "LMS + CBT dalam Satu Sistem": "LMS + CBT in One System",
+  "Modul pembelajaran dan pelaksanaan ujian berbasis komputer dirancang dalam satu ekosistem sehingga hasil pelatihan langsung tersimpan ke rekapitulasi peserta.": "Learning modules and computer-based exam delivery are designed in one ecosystem so training results go straight into participant recaps.",
+  "03 // HASIL": "03 // RESULTS",
+  "Evaluasi yang Terukur": "Measurable Evaluation",
+  "Nilai ujian terhitung otomatis, terdokumentasi per peserta, dan dapat dilaporkan ke instansi tanpa proses rekap manual.": "Exam scores are computed automatically, documented per participant, and can be reported to the agency without manual recap work."
+}
